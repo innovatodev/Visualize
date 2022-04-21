@@ -1,4 +1,5 @@
 ﻿. .\Visualize.ps1
+Clear-Host 
 $null = Visualize -ScriptBlock { Get-Service -ErrorAction SilentlyContinue | Select-Object -Property * -First 10 }
 $null = Visualize -ScriptBlock { Get-AppxPackage -ErrorAction SilentlyContinue | Select-Object -Property * -First 10 }
 $null = Visualize -ScriptBlock { Get-Process -ErrorAction SilentlyContinue | Select-Object -Property * -First 10 }
