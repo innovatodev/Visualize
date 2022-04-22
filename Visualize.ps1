@@ -1,4 +1,10 @@
-﻿$P_DEBUG = $true
+﻿<#
+        .SYNOPSIS
+            Visualize Any PSObject Object
+        .DESCRIPTION
+            Script used to visualize any PSObject(s) from scriptblocks, it will list all properties and values in a TreeView Form.
+#>
+$P_DEBUG = $true
 $P_VERBOSE = $false
 . .\window.ps1
 Function Visualize
